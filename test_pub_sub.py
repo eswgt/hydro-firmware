@@ -1,7 +1,7 @@
 from google.cloud import pubsub_v1
 
 PROJECT_ID = 'hydroponics-dev'
-TOPIC_ID = 'hydroponics-dev'
+TOPIC_ID = 'status'
 
 publisher = pubsub_v1.PublisherClient()
 topic_name = 'projects/{project_id}/topics/{topic}'.format(
